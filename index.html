@@ -26,43 +26,70 @@
         <div class="album py-5 bg-light">
           
             <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card shadow-sm align-items-center">
-                    <img src="img/hand_480px.png" alt="" class="img-fluid" height="50%" width="50%">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn btn-lg btn-primary">PLAY</button>
+            <div class="row align-items-start justify-content-center">
+              <div class="col-3">                
+                <div class="card border-primary text-center align-items-center"> 
+                  <div class="card-header">
+                    HUMAN
+                  </div>                                                  
+                    <img src="img/puzzled.png" alt="" class="img-fluid" height="50%" width="50%">
+                  <div class="card-body">                   
+                    <p class="card-text">Choose wisely your options</p>
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-primary">Paper</button>
+                      <button type="button" class="btn btn-success">Rock</button>
+                      <button type="button" class="btn btn-danger">Scissors</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card shadow-sm align-items-center">
-                    <img src="img/hand_rock_480px.png" alt="" class="img-fluid" height="50%" width="50%">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn btn-lg btn-primary ">PLAY</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="col-3">                
+                <div class="card border-primary text-center align-items-center"> 
+                  <div class="card-header">
+                      COMPUTER
+                  </div>                                                  
+                    <img src="img/cool.png" alt="" class="img-fluid" height="50%" width="50%">
+                  <div class="card-body">                   
+                    <p class="card-text">Neutral, always random</p>
+                      
+                      <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+                        <label class="btn btn-outline-primary" for="btnradio1">Easy</label>
 
-              <div class="col">
-                <div class="card shadow-sm align-items-center">
-                    <img src="img/hand_scissors_480px.png" alt="" class="img-fluid" height="50%" width="50%">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn btn-lg btn-primary">PLAY</button>
-                    </div>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="btnradio2">Neutral</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="btnradio3">Hard</label>
+                      </div>                  
+                    
                   </div>
-                </div>
-              </div>
+                </div>           
             </div>
+
+            <div class="col-6">
+            
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Human</th>
+                    <th scope="col">Computer</th>
+                    <th scope="col">Mode</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="text-success">Win</td>
+                    <td class="text-danger">Loose</td>
+                    <td>Neutral</td>
+                  </tr>                  
+                </tbody>
+              </table>
+            
+          </div>
         </div>
         </div>
 
